@@ -13,7 +13,7 @@ vector<int> countChocolates(int n, int k, vector<int> arr)
             mp[arr[i-k]]--;
             if(mp[arr[i-k]]==0)  mp.erase(arr[i-k]);
         }
-        //start storing the answers from the first slidin
+        //start storing the answers from the first sliding window 
         if(i>=k-1)
         {
             ans.push_back(mp.size());
